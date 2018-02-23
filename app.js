@@ -41,7 +41,8 @@ var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
 var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
 
-const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v2.0/apps/' + luisAppId + '?subscription-key=' + luisAPIKey+'&staging=true&verbose=true&timezoneOffset=330&q=';
+const LuisModelUrl='https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/5dbfbe5e-b305-4c96-a141-c6092ce1d0c5?subscription-key=8aa477f0bcb649fb8963a812e1fe0057&staging=true&verbose=true&timezoneOffset=330&q=';
+//const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v2.0/apps/' + luisAppId + '?subscription-key=' + luisAPIKey+'&staging=true&verbose=true&timezoneOffset=330&q=';
 //const LuisModelUrl ='https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/f94c6226-1925-451f-a65e-b68e15bcaa4e?subscription-key=8aa477f0bcb649fb8963a812e1fe0057&staging=true&verbose=true&timezoneOffset=330&q=';
 // Main dialog with LUIS
 var recognizer = new builder.LuisRecognizer(LuisModelUrl);
